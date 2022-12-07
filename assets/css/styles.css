@@ -39,6 +39,15 @@ body {
     background-color: #15191C;
     width: 75vw;
     height: 100vh;
+
+    position: absolute;
+    left: -100vh;
+    transition: .25s;
+}
+
+.lateral-menu--active {
+    left: 0;
+    transition: .25s;
 }
 
 .lateral-menu__logo {
@@ -55,6 +64,12 @@ body {
     align-items: center;
 }
 
+.lateral-menu__link--active {
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
 .lateral-menu__link::before {
     content: "";
     width: 24px;
@@ -62,5 +77,29 @@ body {
     font-size: 24px;
     position: absolute;
     left: 24px;
+}
+
+.lateral-menu__link--home::before {
+    content: "\e902";
+}
+
+.lateral-menu__link--videos::before {
+    content: "\e90e";
+}
+
+.lateral-menu__link--points::before {
+    content: "\e909";
+}
+
+.lateral-menu__link--members::before {
+    content: "\e903";
+}
+
+.lateral-menu__link--shirts::before {
+    content: "\e900";
+}
+
+.lateral-menu__link--paitings::before {
+    content: "\e90a";
 }
 
