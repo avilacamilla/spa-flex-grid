@@ -103,3 +103,81 @@ body {
     content: "\e90a";
 }
 
+.principal {
+    padding: 24px;
+}
+
+.page__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #2C3A3A;
+}
+
+.card__content {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__best {
+    grid-column: span 2;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    grid-column: span 2;
+}
+
+.card__perfil {
+    color: #95999C;
+    font-size: 0.9rem;
+    grid-column: span 2;
+}
+
+.card__info {
+    display: flex;
+    align-items: center;
+    color: #95999C;
+}
+
+.card__info--time {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.card__info--views {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0480dc;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.card__button--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.card__button--best {
+    width: 100%;
+}
+
+.card__button--best::before {
+    margin-right: 8px;
+}
+
