@@ -105,6 +105,8 @@ body {
 
 .principal {
     padding: 24px;
+    display: grid;
+    gap: 16px;
 }
 
 .page__title {
@@ -119,10 +121,15 @@ body {
     background: #2C3A3A;
 }
 
+.card--best {
+    margin-bottom: 16px;
+}
+
 .card__content {
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 
 .card__best {
