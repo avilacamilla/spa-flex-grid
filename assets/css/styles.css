@@ -175,6 +175,7 @@ body {
 
 .card__button--best {
     width: 100%;
+    grid-column: span 2;
 }
 
 .card__button--best::before {
