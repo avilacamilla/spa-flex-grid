@@ -114,6 +114,11 @@ body {
     font-weight: 700;
 }
 
+.title-section {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .card {
     width: 100%;
     border-radius: 15px;
@@ -173,6 +178,7 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .card__button--play::before {
@@ -187,5 +193,10 @@ body {
 
 .card__button--best::before {
     margin-right: 8px;
+}
+
+.section {
+    display: grid;
+    gap: 16px;
 }
 
