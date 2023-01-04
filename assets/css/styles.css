@@ -159,12 +159,12 @@ body {
     color: #95999C;
 }
 
-.card__info--time {
+.card__info--time::before {
     content: "\e90c";
     margin-right: 8px;
 }
 
-.card__info--views {
+.card__info--views::before {
     content: "\e90f";
     margin-right: 8px;
 }
@@ -200,3 +200,10 @@ body {
     gap: 16px;
 }
 
+.card__button--buy::before {
+    content: "\e901";
+}
+
+.card__info--price::before {
+    content: "\e905";
+}
