@@ -9,6 +9,13 @@ body {
    color: #FFFFFF;
 }
 
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +38,58 @@ body {
 
 .header__logo {
     width: 40px;
+}
+
+.header__perfil {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        background: #1D232A;
+        display: grid;
+        column-gap: 32px;
+        grid-template-columns: 1fr auto;
+        padding: 16px 60px;
+        height: 80px;
+        box-sizing: border-box;
+    }
+    
+    .header__menu {
+        display: none;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__perfil {
+        display: grid;
+        grid-template-columns: reapet(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-end;
+        color: #95999C;
+        padding: 8px 32px;
+        border-right: 1px solid #95999C;
+    }
+
+    .header__perfil::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../images/banner_mobile_1.jpeg);
+        background-size: contain;
+        background-repeat: no repeat;
+        background-position: center;
+    }
+
+    .header__perfil::after {
+        content: "\e90d";
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
 }
 
 .lateral-menu {
@@ -103,6 +162,10 @@ body {
     content: "\e90a";
 }
 
+@media screen and (min-width: 1440px) {
+    .lateral-menu  
+}
+
 .principal {
     padding: 24px;
     display: grid;
@@ -115,7 +178,7 @@ body {
 }
 
 .title-section {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -207,3 +270,4 @@ body {
 .card__info--price::before {
     content: "\e905";
 }
+
